@@ -6,13 +6,26 @@ namespace TennisBookings.Web.Controllers
 {
     public class HomeController : Controller
     {
+        //readonly avoids the possibility of other methods from accidentally assigning a different value for the dependency after the controller is instantiated.
+        private readonly IWeatherForecaster _weatherForecaster;
+
+        //this supports dependency injection by allowing the passing of any dependencies to this consuming code when it's constructed. 
+        public HomeController(IWeatherForecaster weatherForecaster)
+        {
+            _weatherForecaster = weatherForecaster;
+        }
+
         [Route("")]
         public IActionResult Index()
         {
             var viewModel = new HomeViewModel();
 
-            var weatherForecaster = new WeatherForecaster();
-            var currentWeather = weatherForecaster.GetCurrentWeather();
+            // No longer using these
+            //var weatherForecaster = new WeatherForecaster();
+            //var currentWeather = weatherForecaster.GetCurrentWeather();
+            
+            // Now using IWeatherForecaster that was provided by the constructor rather than creating its own instance
+            var currentWeather = _weatherForecaster.GetCurrentWeather();
             
             switch (currentWeather.WeatherCondition)
             {
