@@ -1,0 +1,6 @@
+C:\Users\Sotelo\Documents\Pluralsight\Dependency Injection in ASP.NET Core\02\demos\Before\src\TennisBookings.Web\obj\Debug\netcoreapp2.2\TennisBookings.Web.csprojAssemblyReference.cache
+C:\Users\Sotelo\Documents\Pluralsight\Dependency Injection in ASP.NET Core\02\demos\Before\src\TennisBookings.Web\obj\Debug\netcoreapp2.2\TennisBookings.Web.csproj.CoreCompileInputs.cache
+C:\Users\Sotelo\Documents\Pluralsight\Dependency Injection in ASP.NET Core\02\demos\Before\src\TennisBookings.Web\obj\Debug\netcoreapp2.2\TennisBookings.Web.RazorAssemblyInfo.cache
+C:\Users\Sotelo\Documents\Pluralsight\Dependency Injection in ASP.NET Core\02\demos\Before\src\TennisBookings.Web\obj\Debug\netcoreapp2.2\TennisBookings.Web.RazorAssemblyInfo.cs
+C:\Users\Sotelo\Documents\Pluralsight\Dependency Injection in ASP.NET Core\02\demos\Before\src\TennisBookings.Web\obj\Debug\netcoreapp2.2\TennisBookings.Web.AssemblyInfoInputs.cache
+C:\Users\Sotelo\Documents\Pluralsight\Dependency Injection in ASP.NET Core\02\demos\Before\src\TennisBookings.Web\obj\Debug\netcoreapp2.2\TennisBookings.Web.AssemblyInfo.cs
