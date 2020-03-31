@@ -10,6 +10,7 @@ namespace TennisBookings.Web.Controllers
         private readonly IWeatherForecaster _weatherForecaster;
 
         //this supports dependency injection by allowing the passing of any dependencies to this consuming code when it's constructed. 
+        //Since the HomeController now depends on an abstraction defined by the IWeatherForecaster interface, it is now decoupled from changes to the implementation, which gets injected
         public HomeController(IWeatherForecaster weatherForecaster)
         {
             _weatherForecaster = weatherForecaster;
@@ -20,7 +21,7 @@ namespace TennisBookings.Web.Controllers
         {
             var viewModel = new HomeViewModel();
 
-            // No longer using these
+            // NO LONGER USING THESE
             //var weatherForecaster = new WeatherForecaster();
             //var currentWeather = weatherForecaster.GetCurrentWeather();
             
